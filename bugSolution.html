@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text with <b>bold</b> and <i>italic</i> parts.
+  </div>
+  <script>
+    //Correct way to select and modify the content of a div element, preserving HTML formatting
+    document.querySelector('#myDiv').innerHTML = "This text is modified with <b>bold</b> and <i>italic</i> parts.";
+  </script>
+</body>
+</html>
